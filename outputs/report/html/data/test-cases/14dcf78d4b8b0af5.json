@@ -1,0 +1,68 @@
+{
+  "uid" : "14dcf78d4b8b0af5",
+  "name" : "test_manage",
+  "fullName" : "TestCases.test_home.TestHome#test_manage",
+  "historyId" : "71afbcb37ad09e58381ef0dc0b1bfa6c",
+  "time" : {
+    "start" : 1665807284928,
+    "stop" : 1665807284928,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "AttributeError: 'NoneType' object has no attribute 'find_element'",
+  "statusTrace" : "self = <TestCases.test_home.TestHome object at 0x000001D9532E11C0>\n\n    @pytest.mark.app\n    @allure.story(\"管理城市页\")  # 类名\n    def test_manage(self):\n>       self.app.goto_welcome().\\\n            click_agree(3).\\\n            add_suggested_city().\\\n            click_header_more(contant.manage_cities).\\\n            screen_out(contant.manage_cities)\n\nTestCases\\test_home.py:22: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nPage\\WelcomePage.py:18: in click_agree\n    self.find(MobileBy.ID, contant.id_agree_btn_china).click()\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <Page.WelcomePage.WelcomePage object at 0x000001D9532E10A0>\nMobileBy = 'id', locator = 'com.huawei.android.totemweather:id/agree_btn_china'\n\n    def find(self, MobileBy, locator):\n>       return self.driver.find_element(MobileBy, locator)\nE       AttributeError: 'NoneType' object has no attribute 'find_element'\n\nCommon\\BasePage.py:23: AttributeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "管理城市页"
+  }, {
+    "name" : "tag",
+    "value" : "app"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCases"
+  }, {
+    "name" : "suite",
+    "value" : "test_home"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestHome"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-OS95OIT7"
+  }, {
+    "name" : "thread",
+    "value" : "66416-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCases.test_home"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "app" ]
+  },
+  "source" : "14dcf78d4b8b0af5.json",
+  "parameterValues" : [ ]
+}

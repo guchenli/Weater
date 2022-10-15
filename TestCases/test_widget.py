@@ -1,0 +1,23 @@
+# -*- coding: utf-8 -*-
+# @author: guchenli
+# @time: 2022-10-14
+# @File: test_widget.py
+
+import allure
+import pytest
+from Common import contant
+from Page.App import App
+
+
+class TestWidget:
+    def setup(self):
+        self.app = App()
+        self.driver = self.app.start()
+
+    def teardown(self):
+        self.app.stop()
+
+    @pytest.mark.widget
+    @allure.story("widget")
+    def test_(self):
+        self.app.goto_welcome().click_agree(3)

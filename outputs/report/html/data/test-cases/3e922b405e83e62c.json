@@ -1,0 +1,68 @@
+{
+  "uid" : "3e922b405e83e62c",
+  "name" : "test_report",
+  "fullName" : "TestCases.test_home.TestHome#test_report",
+  "historyId" : "771b66565e5d28c30b2c17bd758c696b",
+  "time" : {
+    "start" : 1665807286033,
+    "stop" : 1665807286033,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "AttributeError: 'NoneType' object has no attribute 'find_element'",
+  "statusTrace" : "self = <TestCases.test_home.TestHome object at 0x000001D9532BF790>\n\n    @pytest.mark.app\n    @allure.story(\"反馈当前天气\")  # 类名\n    def test_report(self):\n        # self.app.goto_welcome().click_agree(1)\n        # time.sleep(3)\n        # cmd = \"adb shell input swipe 500 500 500 1700 2000\"\n        # Shell.shell(cmd)\n        # print(self.driver.page_source)\n    \n        # self.app.start_with_city(4)\n        # self.app.goto_welcome().click_agree(1).wait_refresh().swipe(\"up\").swipe(\"down\").swipe(\"left\").swipe(\"right\")\n    \n        # self.app.start_with_city(3)\n>       self.app.goto_welcome(). \\\n            click_agree(1). \\\n            click_header_more(contant.report_error). \\\n            screen_out(contant.report_error)\n\nTestCases\\test_home.py:41: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nPage\\WelcomePage.py:18: in click_agree\n    self.find(MobileBy.ID, contant.id_agree_btn_china).click()\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <Page.WelcomePage.WelcomePage object at 0x000001D9532E1DF0>\nMobileBy = 'id', locator = 'com.huawei.android.totemweather:id/agree_btn_china'\n\n    def find(self, MobileBy, locator):\n>       return self.driver.find_element(MobileBy, locator)\nE       AttributeError: 'NoneType' object has no attribute 'find_element'\n\nCommon\\BasePage.py:23: AttributeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "反馈当前天气"
+  }, {
+    "name" : "tag",
+    "value" : "app"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCases"
+  }, {
+    "name" : "suite",
+    "value" : "test_home"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestHome"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-OS95OIT7"
+  }, {
+    "name" : "thread",
+    "value" : "66416-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCases.test_home"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "app" ]
+  },
+  "source" : "3e922b405e83e62c.json",
+  "parameterValues" : [ ]
+}

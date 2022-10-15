@@ -1,0 +1,82 @@
+{
+  "9b38dcbaf04f63544576ad9d77212b88" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e8ea0c9641f5eeb6",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'",
+      "time" : {
+        "start" : 1665807288081,
+        "stop" : 1665807288315,
+        "duration" : 234
+      }
+    } ]
+  },
+  "771b66565e5d28c30b2c17bd758c696b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3e922b405e83e62c",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'find_element'",
+      "time" : {
+        "start" : 1665807286033,
+        "stop" : 1665807286033,
+        "duration" : 0
+      }
+    } ]
+  },
+  "71afbcb37ad09e58381ef0dc0b1bfa6c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "14dcf78d4b8b0af5",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'find_element'",
+      "time" : {
+        "start" : 1665807284928,
+        "stop" : 1665807284928,
+        "duration" : 0
+      }
+    } ]
+  },
+  "2fa53bac8445686d1bcde0734414dce8" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c1d3082c9ee3670b",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'find_element'",
+      "time" : {
+        "start" : 1665807287058,
+        "stop" : 1665807287058,
+        "duration" : 0
+      }
+    } ]
+  }
+}

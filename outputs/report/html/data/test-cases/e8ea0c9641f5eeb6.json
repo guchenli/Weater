@@ -1,0 +1,68 @@
+{
+  "uid" : "e8ea0c9641f5eeb6",
+  "name" : "test_language",
+  "fullName" : "TestCases.test_home.TestHome#test_language",
+  "historyId" : "9b38dcbaf04f63544576ad9d77212b88",
+  "time" : {
+    "start" : 1665807288081,
+    "stop" : 1665807288315,
+    "duration" : 234
+  },
+  "status" : "broken",
+  "statusMessage" : "AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'",
+  "statusTrace" : "self = <TestCases.test_home.TestHome object at 0x000001D9532D3D00>\n\n    @pytest.mark.app\n    @allure.story(\"个性换肤\")  # 类名\n    def test_language(self):\n>       self.app.set_language(\"English\")\n\nTestCases\\test_home.py:58: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <Page.App.App object at 0x000001D952DD39D0>, language = 'English'\n\n    def set_language(self, language):\n        cmd = \"adb shell am start -a android.settings.LOCALE_SETTINGS\"\n        Shell.shell(cmd)\n        # time.sleep(3)\n        # print(self.driver.page_source)\n>       self.driver.find_element_by_xpath(f\"//*[@text='{language}']\").click()\nE       AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'\n\nCommon\\BasePage.py:121: AttributeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "个性换肤"
+  }, {
+    "name" : "tag",
+    "value" : "app"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCases"
+  }, {
+    "name" : "suite",
+    "value" : "test_home"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestHome"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-OS95OIT7"
+  }, {
+    "name" : "thread",
+    "value" : "66416-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCases.test_home"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "app" ]
+  },
+  "source" : "e8ea0c9641f5eeb6.json",
+  "parameterValues" : [ ]
+}

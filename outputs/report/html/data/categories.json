@@ -1,0 +1,69 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "AttributeError: 'NoneType' object has no attribute 'find_element'",
+      "children" : [ {
+        "name" : "test_manage",
+        "uid" : "14dcf78d4b8b0af5",
+        "parentUid" : "aea41d374636158f3fd1da51a865a2b8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1665807284928,
+          "stop" : 1665807284928,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_report",
+        "uid" : "3e922b405e83e62c",
+        "parentUid" : "aea41d374636158f3fd1da51a865a2b8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1665807286033,
+          "stop" : 1665807286033,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_theme",
+        "uid" : "c1d3082c9ee3670b",
+        "parentUid" : "aea41d374636158f3fd1da51a865a2b8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1665807287058,
+          "stop" : 1665807287058,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "aea41d374636158f3fd1da51a865a2b8"
+    }, {
+      "name" : "AttributeError: 'NoneType' object has no attribute 'find_element_by_xpath'",
+      "children" : [ {
+        "name" : "test_language",
+        "uid" : "e8ea0c9641f5eeb6",
+        "parentUid" : "3b57f662a98509ed72df29d063efc90f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1665807288081,
+          "stop" : 1665807288315,
+          "duration" : 234
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3b57f662a98509ed72df29d063efc90f"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}
